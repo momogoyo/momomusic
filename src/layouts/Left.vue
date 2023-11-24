@@ -1,16 +1,21 @@
 <script setup lang="ts">
-import { Iconoir } from '@iconoir/vue'
-
 import Navigation from '../components/Navigation.vue'
 import Profile from '../components/Profile.vue'
 </script>
 
 <template>
-  <img src="logo.png" alt="">
+  <div class="logo">
+    <img src="logo.png" alt="모모플레이어 로고" />
+    <span>momo</span><span>player</span>
+  </div>
   <Navigation />
   <Profile />
-  <div class="momomusic__Left"><Iconoir /></div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+.logo {
+  img {
+    width: 3.2rem;
+  }
+}
 </style>

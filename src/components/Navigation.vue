@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { CompactDisc } from '@iconoir/vue'
 import { RouterLink } from 'vue-router'
 </script>
 
@@ -7,7 +8,7 @@ import { RouterLink } from 'vue-router'
     <strong>MENU</strong>
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/genres">Genres</RouterLink>
-    <RouterLink to="/albums">Albums</RouterLink>
+    <RouterLink to="/albums"><i>{{ CompactDisc }}</i>Albums</RouterLink>
     <RouterLink to="/artists">Artists</RouterLink>
 
     <strong>LIBRARY</strong>

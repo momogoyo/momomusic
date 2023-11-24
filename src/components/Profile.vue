@@ -4,12 +4,16 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <div class="momo-music--profile">
-    <a href="#">
+    <RouterLink to="/about">
       <div class="avatar">
         <img src="https://avatars.githubusercontent.com/HyunYuJin" alt="avatar" />
         <p>momogoyo</p>
       </div>
-    </a>
-    <RouterLink to="/about"><span class="material-icons-two-tone">Go to Profile</span> </RouterLink>
+      <span class="material-icons-two-tone">Go to Profile</span>
+      <i class="momomusic__Left"></i>
+    </RouterLink>
   </div>
 </template>
+
+<style scoped>
+</style>

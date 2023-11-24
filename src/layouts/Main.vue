@@ -2,8 +2,11 @@
 </script>
 
 <template>
-  <div class="momomusic__Main"></div>
+  <div class="momomusic__Main">
+
+  </div>
 </template>
 
 <style scoped>
+
 </style>
