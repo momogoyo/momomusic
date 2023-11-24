@@ -1,0 +1,32 @@
+// Weak: 주로 넓은 영역
+// Strong: 강조 및 대비
+// Text: 텍스트 색상
+// Button: 버튼 색상
+// Input: 입력 필드
+// Field: 필드 배경
+// Head: 헤더 및 타이틀
+// Highlight: 텍스트 강조
+
+:root {
+  --primary: #EDC217;
+  --light-weak: #E2E8F0;
+  --light-strong: #FFFFFF;
+  --light-input: #CBD5E0;
+  --light-text: #2D3748;
+  --light-btn: #4A5568;
+  --light-field: #EDF2F7;
+  --light-head: #A0AEC0;
+  --light-highlight: #BEE3F8;
+
+  --dark-weak: #0F172B;
+  --dark-strong: #303030;
+  --dark-input: #293548;
+  --dark-text: #92A1B6;
+  --dark-btn: #CCCCCC;
+  --dark-field: #1E293B;
+  --dark-head: #293548;
+  --dark-highlight: #2D4258;
+
+  --black: #000000;
+  --white: #FFFFFF;
+}

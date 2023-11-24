@@ -1,14 +1,17 @@
 <script setup lang="ts">
-import Left from '../layouts/Left.vue'
-import Main from '../layouts/Main.vue'
+import Main from '../components/Main.vue'
+import Player from '../components/Player.vue'
 </script>
 
 <template>
   <div class="momomusic__Home">
-    <Left />
-    <Main />
+    <Main></Main>
+    <Player></Player>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+.momomusic__Home {
+  grid-column: span 3 / span 3;
+}
 </style>
