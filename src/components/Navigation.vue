@@ -7,36 +7,41 @@ import { Home, CompactDisc, AlbumOpen, Palette, FavouriteBook, AlbumList, Planet
     <nav class="relative">
       <strong class="heading">MENU</strong>
       <ul class="items">
-        <li class="item"><a href="#"><i><Home /></i>Home</a></li>
-        <li class="item"><a href="#"><i><CompactDisc /></i>Genres</a></li>
-        <li class="item"><a href="#"><i><AlbumOpen /></i>Albums</a></li>
-        <li class="item"><a href="#"><i><Palette /></i>Artists</a></li>
+        <li class="item"><a href="#"><i class="icon"><Home /></i><span>Home</span></a></li>
+        <li class="item"><a href="#"><i class="icon"><CompactDisc /></i><span>Genres</span></a></li>
+        <li class="item"><a href="#"><i class="icon"><AlbumOpen /></i><span>Albums</span></a></li>
+        <li class="item"><a href="#"><i class="icon"><Palette /></i><span>Artists</span></a></li>
       </ul>
     </nav>
     <nav class="relative">
       <strong class="heading">LIBRARY</strong>
       <ul class="items">
-        <li class="item"><a href="#"><i><FavouriteBook /></i>Favorites</a></li>
-        <li class="item"><a href="#"><i><AlbumList /></i>Albums</a></li>
-        <li class="item"><a href="#"><Planet />Artists</a></li>
+        <li class="item"><a href="#"><i class="icon"><FavouriteBook /></i><span>Favorites</span></a></li>
+        <li class="item"><a href="#"><i class="icon"><AlbumList /></i><span>Albums</span></a></li>
+        <li class="item"><a href="#"><i class="icon"><Planet /></i><span>Artists</span></a></li>
       </ul>
     </nav>
     <nav class="relative">
       <strong class="heading">PLAYLIST</strong>
-      <button type="button" class="create-btn"><i><MusicDoubleNotePlus /></i>Create New</button>
+      <button type="button" class="create-btn"><i class="icon"><MusicDoubleNotePlus /></i>Create New</button>
     </nav>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .momomusic--navigation {
-  i {
+  .icon {
+    display: inline-flex;
+    width: 1rem;
     margin-right: 0.8rem;
-    margin-left: 0.2rem;
+    line-height: 1;
   }
 
   .relative {
     .heading {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       color: var(--light-head);
       font-size: 0.75rem;
       padding: 0.6rem 0.5rem;
@@ -64,12 +69,23 @@ import { Home, CompactDisc, AlbumOpen, Palette, FavouriteBook, AlbumList, Planet
         color: var(--light-text);
         background-color: var(--light-field);
       }
+
+      > a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        > span {
+          flex-grow: 1;
+        }
+      }
     }
   }
   
   .create-btn {
-    background-color: transparent;
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.6rem 0.5rem;
   }
 }
 </style>

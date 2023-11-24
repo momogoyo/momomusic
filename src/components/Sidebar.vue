@@ -6,8 +6,8 @@ import Profile from '../components/Profile.vue'
 <template>
   <div class="momomusic__Sidebar">
     <div class="logo">
-      <img src="logo.png" alt="모모플레이어 로고" />
-      <span>momo</span><span>player</span>
+      <img src="logo.png" alt="모모뮤직 로고" />
+      <h2 class="title"><span class="momo">momo</span><span>music</span></h2>
     </div>
     <Navigation />
     <Profile />
@@ -18,11 +18,30 @@ import Profile from '../components/Profile.vue'
 .momomusic__Sidebar {
   grid-column: span 1 / span 1;
   background-color: var(--white);
+  padding: 1.5rem;
 
   .logo {
-    img {
-      width: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0.75rem 0 1.75rem 0;
+
+    > img {
+      width: 2.8rem;
+      margin: 0 0.6rem 0 0.2rem;
     }
+
+    .title {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      color: var(--light-text);
+      
+      .momo {
+        color: var(--primary);
+      }
+    }
+    
   }
 }
 </style>

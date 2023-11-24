@@ -13,5 +13,7 @@ import Player from '../components/Player.vue'
 <style lang="scss" scoped>
 .momomusic__Home {
   grid-column: span 3 / span 3;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 </style>

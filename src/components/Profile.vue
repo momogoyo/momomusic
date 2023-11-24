@@ -22,9 +22,16 @@ import { ArrowRight } from '@iconoir/vue'
   align-items: center;
   color: var(--light-text);
   border-top: 1px solid var(--light-input);
+  padding: 1.5rem 0 0;
+  margin-top: 1.5rem;
+
+  > a {
+    width: 100%;
+  }
 
   .avatar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     
     > img {
@@ -32,6 +39,14 @@ import { ArrowRight } from '@iconoir/vue'
       height: 40px;
       border-radius: 50%;
       object-fit: cover;
+    }
+
+    > i {
+      display: inline-flex;
+      width: 1rem;
+      margin-right: 0.8rem;
+      margin-left: 0.2rem;
+      line-height: 1;
     }
   }
 }
