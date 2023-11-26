@@ -55,16 +55,6 @@ import { Home, CompactDisc, AlbumOpen, Palette, FavouriteBook, AlbumList, Planet
       cursor: pointer;
       transition: 0.1s linear;
 
-      &::after {
-        content: "";
-        position: absolute;
-        background: transparent;
-        width: 2px;
-        transform: translateY(-0.5rem);
-        height: 2.6rem;
-        right: -1.5rem;
-      }
-
       &:hover {
         color: var(--light-text);
         background-color: var(--light-field);
