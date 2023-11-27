@@ -30,6 +30,8 @@ import { Home, CompactDisc, AlbumOpen, Palette, FavouriteBook, AlbumList, Planet
 
 <style lang="scss" scoped>
 .momomusic--navigation {
+  flex-grow: 1;
+  
   .icon {
     display: inline-flex;
     width: 1rem;

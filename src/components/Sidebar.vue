@@ -17,6 +17,9 @@ import Profile from '../components/Profile.vue'
 <style lang="scss" scoped>
 .momomusic__Sidebar {
   grid-column: span 1 / span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--white);
   padding: 1.5rem;
 

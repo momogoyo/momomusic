@@ -15,7 +15,7 @@ import { ArrowRight } from '@iconoir/vue'
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .momomusic--profile {
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,6 @@ import { ArrowRight } from '@iconoir/vue'
   color: var(--light-text);
   border-top: 1px solid var(--light-input);
   padding: 1.5rem 0 0;
-  margin-top: 1.5rem;
 
   > a {
     width: 100%;
