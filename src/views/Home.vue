@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import Main from '../components/Main.vue'
+import Christmas from '../components/events/Christmas.vue'
 import Player from '../components/Player.vue'
 </script>
 
 <template>
   <div class="momomusic__Home">
-    <Main></Main>
-    <Player></Player>
+    <Christmas />
+    <Player />
   </div>
 </template>
 
